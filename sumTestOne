@@ -1,6 +1,6 @@
 const sum = (a) => {
 	let result = a
-	const innerFun = (b) => {
+	const innerFun = (b=0) => {
 		result += b
 		return innerFun
 	}
