@@ -4,8 +4,6 @@ const sum = (a) => {
 		result += b
 		return innerFun
 	}
-	innerFun.valueOf = () => {
-		return result;
-	}
+	innerFun.valueOf = () => result
 	return innerFun
 }
