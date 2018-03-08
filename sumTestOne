@@ -1,0 +1,9 @@
+const sum = (a) => {
+	let result = a
+	const innerFun = (b=0) => {
+		result += b
+		return innerFun
+	}
+	innerFun.valueOf = () => result
+	return innerFun
+}
