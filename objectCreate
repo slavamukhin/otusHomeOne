@@ -1,0 +1,6 @@
+const objectCreate = (objectProto, methodProperty) => {
+	return {
+		...methodProperty,
+		__proto__: objectProto,
+	}
+}
